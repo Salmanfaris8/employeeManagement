@@ -1,0 +1,21 @@
+.app-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(28, 162, 28);
+}
+.h1{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+.link{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,49 @@
+.list-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .employee-table th, 
+  .employee-table td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .employee-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .btn-edit {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.trash{
+    font-size: 18px;
+    color: #e41227;
+    background:none;
+    border: none;
+    cursor: pointer;
+}
