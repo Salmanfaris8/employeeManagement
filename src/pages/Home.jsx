@@ -54,9 +54,9 @@ const Home = () => {
         <tbody>
             {
               allEmployee.length>0?
-               allEmployee.map((employee)=>(
+               allEmployee.map((employee,index)=>(
                 <tr key={employee.id}>
-                  <td>{employee.id}</td>
+                  <td>{index+1}</td>
                   <td>{employee.name}</td>
                   <td>{employee.email}</td>
                   <td>{employee.status}</td>

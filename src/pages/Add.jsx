@@ -8,15 +8,15 @@ const Add = () => {
 
   const navigate = useNavigate()
   const [employeeDetails,setEmployeeDetails] = useState({
-    id:"",name:"",email:"",status:""
+    name:"",email:"",status:""
   })
 
   console.log(employeeDetails);
   
   const handleUploadEmployeeDetails = async (e)=>{
     e.preventDefault()
-    const {id,name,email,status} = employeeDetails
-    if(id && name && email && status){
+    const {name,email,status} = employeeDetails
+    if(name && email && status){
       try{
         const response = await uploadEmployeeAPI(employeeDetails)
           console.log(response);
@@ -42,11 +42,6 @@ const Add = () => {
         <div className="form-container">
           <h2 className='h2'>Add Employee Details</h2>
           <form onSubmit={handleUploadEmployeeDetails}>
-            <div className="form-group">
-              <label>Employee ID</label>
-              <input onChange={e=>setEmployeeDetails({...employeeDetails,id:e.target.value})} type="text" id="id" name="id" placeholder="Enter employee ID" required/>
-            </div>
-  
             <div className="form-group">
               <label>Username</label>
               <input onChange={e=>setEmployeeDetails({...employeeDetails,name:e.target.value})} type="text" id="username" name="username" placeholder="Enter username" required/>
